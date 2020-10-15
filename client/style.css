@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Staatliches", cursive;
+}
+
+body {
+  background-color: rgb(133, 221, 255);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #0299d8;
+  user-select: none;
+}
+.title span {
+  color: white;
+  font-size: 30px;
+  user-select: none;
+}
+.addInput {
+  height: 50px;
+  width: 250px;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.button {
+  cursor: pointer;
+  height: 50px;
+  width: 80px;
+  color: white;
+  font-size: 30px;
+  border: 0px;
+  background-color: #02b8fe;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #0299d8;
+}
+.todos {
+  margin-top: 20px;
+  width: 330px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  max-width: 330px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.todo:hover {
+  opacity: 1;
+}
+
+.todo p {
+  cursor: pointer;
+  border: 5px solid white;
+  border-radius: 10px;
+  width: 220px;
+  max-width: 220px;
+  background-color: white;
+  padding-left: 5px;
+  word-wrap: break-word;
+}
+.actionButtons {
+}
+.edit,
+.delete,
+.save {
+  font-size: 15px;
+  width: 50px;
+  height: 30px;
+}
+
+.edit:hover {
+  background-color: yellowgreen;
+}
+.delete:hover {
+  background-color: red;
+}
+.save:hover {
+  background-color: green;
+}
+.editInput {
+  height: 30px;
+  width: 270px;
+  margin-right: 5px;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.done {
+  color: grey;
+  /* opacity: 0.8; */
+  text-decoration: line-through;
+}

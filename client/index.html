@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="title">TODO<span>list</span></div>
+      <form id="addForm" method="POST" action="">
+        <input
+          onchange="addFormHandle(event)"
+          class="addInput"
+          type="text"
+          name="todo"
+          required
+          placeholder="Add new todo"
+        />
+        <input class="button" type="submit" value="ADD" />
+      </form>
+      <div class="todos"></div>
+    </div>
+    <script src="./controls.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
